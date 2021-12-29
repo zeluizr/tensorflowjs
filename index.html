@@ -1,0 +1,40 @@
+<!doctype html>
+<html class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                container: {
+                    center: true,
+                    padding: "2rem",
+                },
+            },
+        };
+    </script>
+
+</head>
+
+<body class="h-full sans-serif">
+    <div class="w-full bg-yellow-500 p-5">
+        <h1 class="font-thin text-2xl text-white">TensorFlow</h1>
+    </div>
+    <div class="w-full container mx-auto py-5">
+        <div class="flex justify-between items-center">
+            <h2 class="font-medium text-3xl">Inteligência Artificial com JavaScript e TensorFlow.js</h2>
+            <img src="/src/tensor_logo.png" class="w-12 h-12" alt="TensorFlow">
+        </div>
+        <div class="w-full py-3">
+            <h3>TensorFlow</h3>
+            <textarea class="w-full h-80 border-2 mt-5 mb-5 rounded-md p-5" id="result"></textarea>
+            <button class="bg-yellow-500 px-5 py-3 rounded-md" onclick="executar()">Executar</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    <script src="/src/actions.js"></script>
+</body>
+
+</html>
